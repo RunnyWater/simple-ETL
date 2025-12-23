@@ -1,16 +1,38 @@
-# simple-ETL
-Simple ETL tool that makes ETL process easier, no-code like 
+# Simple ETL
+> Simple ETL tool that makes ETL process easier, no-code like 
 
 ## System Architecture
-![Front-end layer picture](docs/FRONT.jpg)
-### Front-end layer
-#### **React + TypeScript**
+
+### Front-end Layer
+
+![Front-end layer](docs/FRONT.jpg)
+
+**React + TypeScript**
 - Modern UI with Vite
-#### **Components**
+
+**Components**
 - ETL Configuration UI
 - Data Source Selector
 - Transformation Builder
 - Job Monitor
-#### **State Management**
-- TanStack Query 
-- Zustand
+
+**State Management**
+- TanStack Query (Server)
+- Zustand (Client)
+
+---
+### Back-end Layer
+
+![Back-end layer](docs/BACK.jpg)
+
+**FastAPI + Python**
+- Async REST API
+
+**Core Services**
+- ETL Engine
+- Data Connectors
+- Transformation Logic
+- Job Logger
+
+**Data Processing**
+- Dual-engine support with **Pandas** and **Polars**
